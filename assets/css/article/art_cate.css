@@ -15,7 +15,15 @@ body {
   align-items: center;
 }
 
+<<<<<<< HEAD
 #form-add {
   padding-top: 20px;
   padding-right: 30px;
 }
+=======
+#form-add,
+#form-edit {
+  padding-top: 20px;
+  padding-right: 30px;
+}
+>>>>>>> article
