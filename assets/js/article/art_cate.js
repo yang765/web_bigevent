@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 $(function() {
   var layer = layui.layer
 
@@ -10,10 +11,16 @@ $(function () {
   initArtCateList()
   //获取文章分类列表
 >>>>>>> article
+=======
+$(function () {
+  initArtCateList()
+  //获取文章分类列表
+>>>>>>> article
   function initArtCateList() {
     $.ajax({
       method: 'GET',
       url: '/my/article/cates',
+<<<<<<< HEAD
 <<<<<<< HEAD
       success: function(res) {
         var htmlStr = template('tpl-table', res)
@@ -37,6 +44,8 @@ $(function () {
   $('body').on('submit', '#form-add', function(e) {
     e.preventDefault()
 =======
+=======
+>>>>>>> article
       success(res) {
         const htmlStr = template('tpl-table', res);
         $('tbody').html(htmlStr);
@@ -56,11 +65,15 @@ $(function () {
   // 通过代理的形式，为 form-add 表单绑定 submit 事件
   $('body').on('submit', '#form-add', function (e) {
     e.preventDefault();
+<<<<<<< HEAD
+>>>>>>> article
+=======
 >>>>>>> article
     $.ajax({
       method: 'POST',
       url: '/my/article/addcates',
       data: $(this).serialize(),
+<<<<<<< HEAD
 <<<<<<< HEAD
       success: function(res) {
         if (res.status !== 0) {
@@ -74,6 +87,8 @@ $(function () {
     })
   })
 =======
+=======
+>>>>>>> article
       success(res) {
         if (res.status !== 0) {
           return layui.layer.msg('新增分类失败！');
@@ -143,5 +158,8 @@ $(function () {
       })
     })
   })
+<<<<<<< HEAD
+>>>>>>> article
+=======
 >>>>>>> article
 })
